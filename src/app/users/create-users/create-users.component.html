@@ -1,1 +1,23 @@
-<po-input name="input" p-label="PO Input"> </po-input>
+<h2>Criar usuário</h2>
+
+<div>
+  <label for=""> Nome:
+    <input type="text" placeholder="Insira seu nome" [(ngModel)]="request.name">
+  </label>
+<br>
+<br>
+<label for=""> Profissão:
+  <input type="text" placeholder="Insira sua Profissão" [(ngModel)]="request.job">
+</label>
+<br>
+<button (click)="save()">Gravar</button>
+</div>
+<br>
+<br>
+<div *ngIf="response">
+  CRIADO COM SUCESSO
+  <label for="">Nome {{response.name}}</label><br>
+  <label for="">Profissao {{response.job}}</label><br>
+  <label for="">Id {{response.id}}</label><br>
+  <label for="">Criado {{response.createdAt}}</label><br>
+</div>

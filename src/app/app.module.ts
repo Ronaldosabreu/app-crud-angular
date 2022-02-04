@@ -7,6 +7,7 @@ import { PoModule } from '@po-ui/ng-components';
 import { RouterModule } from '@angular/router';
 import { UsersComponent } from './users/users.component';
 import { CreateUsersComponent } from './users/create-users/create-users.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CreateUsersComponent } from './users/create-users/create-users.componen
     BrowserModule,
     AppRoutingModule,
     PoModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
