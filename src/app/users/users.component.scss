@@ -1,0 +1,18 @@
+table{
+  width: 100%;
+}
+table thead{
+  background-color: aqua;
+}
+
+table td{
+  border: 1px solid;
+}
+
+
+
+:host::ng-deep {
+  .classe-dos-headers{
+   color: blue
+  }
+  }

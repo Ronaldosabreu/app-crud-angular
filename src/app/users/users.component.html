@@ -1,0 +1,27 @@
+<h1>Usuários</h1>
+<table *ngIf="responseUsers?.data">
+  <thead>
+    <td>nome</td>
+    <td>sobrenome</td>
+  </thead>
+  <tbody >
+    <tr *ngFor="let user of responseUsers?.data" >
+      <td> {{user.first_name}} </td>
+      <td> {{user.last_name}} </td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Usuários</h1>
+<div class="card">
+  <div class="student-finance" >
+<po-table *ngIf="responseUsers?.data"
+    [p-items]="responseUsers.data"
+    [p-auto-collapse]="true"
+    [p-columns]="columns"
+    [p-hide-columns-manager]="true"
+    [p-sort]="true"
+    [p-striped]="true">
+   </po-table>
+  </div>
+</div>
